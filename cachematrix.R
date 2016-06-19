@@ -1,7 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This file contains the makeCacheMatrix and cacheSolve functions required for
+## completion of the R Programming - Week 3 programming assignment.
 
-## Write a short comment describing this function
+## makeCacheMatrix creates a cached matrix object, given a matrix, for use with
+## the cacheSolve function defined below.
 
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
@@ -16,7 +17,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Given a cached matrix object created by makeCacheMatrix, return the inverse
+## of the matrix, either using the a cached value if present, or by calculating
+## it using solve().
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
